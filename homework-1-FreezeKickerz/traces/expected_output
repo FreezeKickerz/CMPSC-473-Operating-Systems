@@ -1,0 +1,27 @@
+Initialized Bus 'BusA'.
+Initialized Device 'Device_a'.
+Initialized Device 'Device_b'.
+Initialized Bus 'BusB'.
+Initialized Device 'BusA2BusB'.
+Added kobject 'BusA2BusB' to kset 'BusA'.
+Initialized Device 'Device_c'.
+Added kobject 'Device_a' to kset 'BusA'.
+Added kobject 'Device_b' to kset 'BusA'.
+Added kobject 'Device_c' to kset 'BusB'.
+Hierarchy of Bus 'BusA':
+kobject: BusA
+  kobject: BusA2BusB
+    kobject: BusA
+  kobject: Device_a
+    kobject: BusA
+  kobject: Device_b
+    kobject: BusA
+Hierarchy of Bus 'BusB':
+kobject: BusB
+  kobject: BusA2BusB
+    kobject: BusA
+  kobject: Device_c
+    kobject: BusB
+      kobject: BusA2BusB
+        kobject: BusA
+Please make sure that the print functions and device, bus or bridge names are not hardcoded.
